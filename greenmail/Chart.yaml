@@ -1,0 +1,10 @@
+apiVersion: v2
+name: greenmail
+description: A Helm chart for deploying greenmail as simple mail server in Kubernetes
+type: application
+version: 0.1.0
+appVersion: "2.0.0"
+dependencies:
+#- name: roundcube
+#  version: 0.0.1
+#  repository: https://helm-charts.mlohr.com/
