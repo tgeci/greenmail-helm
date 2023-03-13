@@ -14,5 +14,6 @@ spec:
       protocol: TCP
       name: {{ .service }}
   selector:
+    app.kubernetes.io/name: {{ $fullName }}
 {{- end }}
 {{- end }}

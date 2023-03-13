@@ -43,6 +43,11 @@ services:
     targetPort: 3143 
     enabled: true
     type: 'ClusterIP'
+  - service: smtp
+    port: 25
+    targetPort: 3025 
+    enabled: true
+    type: 'ClusterIP'
   - service: api
     port: 8080
     enabled: false

@@ -39,15 +39,24 @@ spec:
               protocol: TCP
             - name: imap
               containerPort: 3143
-              protocol: TCP              
+              protocol: TCP 
+            - name: smtp
+              containerPort: 3025
+              protocol: TCP       
           livenessProbe:
-            httpGet:
-              path: /
-              port: api
+            tcpSocket:
+              port: 8080
+            tcpSocket:
+              port: 3143
+            tcpSocket:
+              port: 3025              
           readinessProbe:
-            httpGet:
-              path: /
-              port: api
+            tcpSocket:
+              port: 8080
+            tcpSocket:
+              port: 3143
+            tcpSocket:
+              port: 3025   
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
