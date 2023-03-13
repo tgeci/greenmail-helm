@@ -1,2 +1,4 @@
 # greenmail-helm
-Helm Chart for greenmail
+This is a simple helm chart for deploying greenmail
+
+## Review the values.yaml for more details
