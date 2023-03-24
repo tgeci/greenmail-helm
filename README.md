@@ -31,8 +31,11 @@ Greenmail allows developers to test email-based applications, services or system
 <details>
 <summary><code>Prepare your environment</code></summary>
 
+### Prerequisits
 - Kubernetes `1.16+`
 - Helm `3.0+` ([installing helm](https://helm.sh/docs/intro/install/))
+
+<br>
 
 > 🟦 __Tip__ 🟦
 >
@@ -55,29 +58,35 @@ Greenmail allows developers to test email-based applications, services or system
 
 <details>
 <summary><code>Installation</code></summary>
+<br>
 
-The following commands will add our repository to your helm:
+The following commands will add our repository to your helm and install the chart:
 
 ```shell
 ## add this helm repository
 helm repo add greenmail https://tgeci.github.io/greenmail-helm/
+
 ## update your helm repo cache
 helm repo update
   
-## To install the chart with the release name `greenmail`
+## to install the chart with the release name `greenmail`
 helm install greenmail tgeci/greenmail-helm
 ```  
 </details>
 
 <details>
 <summary><code>Uninstallation</code></summary>
+<br>
+The following command will uninstall the <code>greenmail</code> helm chart:
+<br>
+<br>
+
 
 ```shell
 ## to uninstall the `greenmail` release:
 helm uninstall greenmail
 ```
 </details>
-
 
 ## Helm Values
 
@@ -86,6 +95,7 @@ The following is a summary of the __helm values__ provided by this chart (see fu
 > click the `▶` symbol to expand
 <details>
 <summary><code>values</code></summary>
+<br>
 
 | Parameter | Description | Default |
 | --- | --- | --- |
