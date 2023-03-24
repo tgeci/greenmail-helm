@@ -3,9 +3,8 @@
 <br>
 
 <p align="center">
-  The <code>Greenmail Helm Chart</code> is the standard way to deploy <a href="https://greenmail-mail-test.github.io/greenmail/">Greenmail</a> on <a href="https://kubernetes.io/">Kubernetes</a> with <a href="https://helm.sh/">Helm</a>.
+  The <code>Greenmail Helm Chart</code> is a way to deploy <a href="https://greenmail-mail-test.github.io/greenmail/">Greenmail</a> on <a href="https://kubernetes.io/">Kubernetes</a> with <a href="https://helm.sh/">Helm</a>.
   <br>
-  Originally created in 2023, it has since helped create deployments of Greenmail on Kubernetes.
 </p>
 
 <p align="center">
